@@ -1,0 +1,2 @@
+#define BUILD_SUFFIX 84664ec-dirty
+#define BUILD_DATE "2021-01-22 09:42:18 +0500"

@@ -1,0 +1,68 @@
+Source: chainox
+Section: utils
+Priority: optional
+Maintainer: Chainox Dev <dev@chainox.net>
+Uploaders: Chainox Dev <dev@chainox.net>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://chainox.net/
+Vcs-Git: git://github.com/chainox-official/chainox.git
+Vcs-Browser: https://github.com/chainox-official/chainox
+
+Package: chainoxd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Chainox is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Chainox uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Chainox Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, chainoxd, and the CLI tool
+ chainox-cli to interact with the daemon.
+
+Package: chainox-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Chainox is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Chainox uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Chainox Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Chainox-Qt, a GUI for Chainox based on Qt.
+
+Package: chainox-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Chainox is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Chainox uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Chainox Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides chainox-tx, a command-line transaction creation
+ tool which can be used without a chainox daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/chainox_bg.qm</file>
+        <file alias="de">locale/chainox_de.qm</file>
+        <file alias="en">locale/chainox_en.qm</file>
+        <file alias="es">locale/chainox_es.qm</file>
+        <file alias="fi">locale/chainox_fi.qm</file>
+        <file alias="fr">locale/chainox_fr.qm</file>
+        <file alias="it">locale/chainox_it.qm</file>
+        <file alias="ja">locale/chainox_ja.qm</file>
+        <file alias="pl">locale/chainox_pl.qm</file>
+        <file alias="pt">locale/chainox_pt.qm</file>
+        <file alias="ru">locale/chainox_ru.qm</file>
+        <file alias="sk">locale/chainox_sk.qm</file>
+        <file alias="sv">locale/chainox_sv.qm</file>
+        <file alias="vi">locale/chainox_vi.qm</file>
+        <file alias="zh_CN">locale/chainox_zh_CN.qm</file>
+        <file alias="zh_TW">locale/chainox_zh_TW.qm</file>
+    </qresource>
+</RCC>

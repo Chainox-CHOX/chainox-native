@@ -1,0 +1,6 @@
+usr/local/bin/chainox-qt usr/bin
+share/pixmaps/chainox32.xpm usr/share/pixmaps
+share/pixmaps/chainox16.xpm usr/share/pixmaps
+share/pixmaps/chainox128.png usr/share/pixmaps
+debian/chainox-qt.desktop usr/share/applications
+debian/chainox-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Chainox
+Comment=Chainox P2P Cryptocurrency
+Comment[fr]=Chainox, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Chainox, eşten eşe kriptografik sanal para birimi
+Exec=chainox-qt %u
+Terminal=false
+Type=Application
+Icon=chainox128
+MimeType=x-scheme-handler/chainox;
+Categories=Office;Finance;
