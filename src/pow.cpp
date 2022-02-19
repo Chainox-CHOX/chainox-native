@@ -32,6 +32,8 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
     uint64_t PastBlocksMin = pastSecondsMin / params.nPowTargetSpacing;
     uint64_t PastBlocksMax = pastSecondsMax / params.nPowTargetSpacing;
 
+    if (BlockLastSolved->nHeight >= 100 && BlockLastSolved->nHeight < 500) { return UintToArith256(params.powLimit).GetCompact(); }
+    
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {

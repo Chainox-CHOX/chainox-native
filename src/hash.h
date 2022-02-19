@@ -354,9 +354,9 @@ public:
 uint64_t SipHashUint256(uint64_t k0, uint64_t k1, const uint256& val);
 uint64_t SipHashUint256Extra(uint64_t k0, uint64_t k1, const uint256& val, uint32_t extra);
 
-/* ----------- Chainox Hash ------------------------------------------------ */
+/* ----------- phiCHOX ------------------------------------------------ */
 template<typename T1>
-inline uint256 Hash(const T1 pbegin, const T1 pend, std::string hashPrevBlock, uint32_t nTime)
+inline uint256 phiCHOX(const T1 pbegin, const T1 pend, std::string hashPrevBlock, uint32_t nTime)
 {
     char hashChar = hashPrevBlock.back();
 
