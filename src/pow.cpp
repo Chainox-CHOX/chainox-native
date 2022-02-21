@@ -31,8 +31,6 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
     uint64_t pastSecondsMax = params.nPowTargetTimespan * 7;
     uint64_t PastBlocksMin = pastSecondsMin / params.nPowTargetSpacing;
     uint64_t PastBlocksMax = pastSecondsMax / params.nPowTargetSpacing;
-
-    if (BlockLastSolved->nHeight >= 100 && BlockLastSolved->nHeight < 500) { return UintToArith256(params.powLimit).GetCompact(); }
     
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return UintToArith256(params.powLimit).GetCompact(); }
 
@@ -85,6 +83,12 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const Conse
 unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consensus::Params& params) {
     /* current difficulty formula, chainox - DarkGravity v3, written by Evan Duffield - evan@dash.org */
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
+    const CBlockIndex *BlockLastSolved = pindexLast;
+    
+    if (BlockLastSolved->nTime >= 1645340400 && BlockLastSolved->nTime <= 1645340640) { return UintToArith256(uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")).GetCompact(); }
+
+    if (BlockLastSolved->nHeight >= 3400 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
+    
     int64_t nPastBlocks = 24;
 
     // make sure we have at least (nPastBlocks + 1) blocks, otherwise just return powLimit
@@ -201,6 +205,12 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 
     // Retarget
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
+    const CBlockIndex *BlockLastSolved = pindexLast;
+    
+    if (BlockLastSolved->nTime >= 1645340400 && BlockLastSolved->nTime <= 1645340640) { return UintToArith256(uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")).GetCompact(); }
+    
+    if (BlockLastSolved->nHeight >= 3400 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
+    
     arith_uint256 bnNew;
     arith_uint256 bnOld;
     bnNew.SetCompact(pindexLast->nBits);
