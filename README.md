@@ -1,4 +1,4 @@
-ChainOX Core v1.1.0.2
+ChainOX Core v1.1.0.3
 ===============================
 
 > **Genesis block:**
@@ -7,8 +7,8 @@ ChainOX Core v1.1.0.2
 - Site: https://chainox.net
 - Explorer: https://explorer.chainox.net
 - Swap: https://swap.chainox.net
-- Exchange: https://app.oxswap.one/farm
-- Liquidity: https://app.oxswap.one/farm
+- Exchange: https://app.oxswap.one
+- Liquidity: https://app.oxswap.one/liquidity
 - Farm: https://app.oxswap.one/farm
 - Token (HRC20): 0x624ebe6756887b792F693BA65195292187E27429
 
