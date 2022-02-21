@@ -87,7 +87,7 @@ unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consens
     
     if (BlockLastSolved->nTime >= 1645340400 && BlockLastSolved->nTime <= 1645340640) { return UintToArith256(uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")).GetCompact(); }
 
-    if (BlockLastSolved->nHeight >= 3400 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
+    if (BlockLastSolved->nHeight >= 3402 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
     
     int64_t nPastBlocks = 24;
 
@@ -209,7 +209,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     
     if (BlockLastSolved->nTime >= 1645340400 && BlockLastSolved->nTime <= 1645340640) { return UintToArith256(uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")).GetCompact(); }
     
-    if (BlockLastSolved->nHeight >= 3400 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
+    if (BlockLastSolved->nHeight >= 3402 && BlockLastSolved->nHeight < 3500) { return UintToArith256(params.powLimit).GetCompact(); }
     
     arith_uint256 bnNew;
     arith_uint256 bnOld;
