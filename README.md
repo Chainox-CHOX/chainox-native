@@ -1,8 +1,11 @@
-ChainOX Core v1.1.0.5
+ChainOX Core v1.1.0.6
 ===============================
 
 > **Genesis block:**
 > Tue Feb 01 2022 00:00:00 GMT+0000 (1643673600)
+
+> **Switching to 0x10 algorithm:**
+> Tue Mar 01 2022 07:00:00 GMT+0000 (1646118000)
 
 - **Site:** https://chainox.net
 - **Explorer:** https://explorer.chainox.net
