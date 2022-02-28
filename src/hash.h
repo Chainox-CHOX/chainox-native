@@ -415,7 +415,7 @@ inline uint256 phiCHOX(const T1 pbegin, const T1 pend, std::string hashPrevBlock
         sph_echo512 (&ctx_echo, static_cast<const void*>(&hash[9]), 64);
         sph_echo512_close(&ctx_echo, static_cast<void*>(&hash[10]));
         return hash[10].trim256();
-    if(nTime >= 1644451200 && nTime < 1646118000) {
+    } else if(nTime >= 1644451200 && nTime < 1646118000) {
         if(hashChar == 48) {
             uint512 hash[34];
             sph_blake512_init(&ctx_blake);
