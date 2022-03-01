@@ -1,4 +1,4 @@
-ChainOX Core v1.2.0.1
+ChainOX Core v1.2.0.2
 ===============================
 
 > **Genesis block:**
