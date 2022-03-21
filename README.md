@@ -11,6 +11,9 @@ ChainOX Core v1.2.0.4
 - **Explorer:** https://explorer.chainox.net
 - **Swap:** https://swap.chainox.net
 
+- **Twitter:** https://twitter.com/chainox_tweet
+- **Discord:** https://discord.com/invite/s55DUwjkgq
+
 - **Token (HRC20):** 0x624ebe6756887b792F693BA65195292187E27429
 - **OxSwap (HRC20):** https://app.oxswap.one
 
