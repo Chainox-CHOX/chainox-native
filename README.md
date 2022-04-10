@@ -11,12 +11,9 @@ ChainOx was founded by an unknown developer in China. On April 9, 2022 that deve
 
 - **Site:** https://chainox.cc
 - **Explorer:** https://chox.mining4people.com/
-- 
-- **Twitter:** 
-- **Discord:** https://discord.com/invite/gpaxQEMMrV
 
-- **Token (HRC20):** 0x624ebe6756887b792F693BA65195292187E27429
-- **OxSwap (HRC20):** https://app.oxswap.one
+
+- **Discord:** https://discord.com/invite/gpaxQEMMrV
 
 - **CoinAlpha:** https://coinalpha.app/new-born/0x1e41ff23d1ba5b947de91a67a53b0a96dd58ec2d
 - **PooCoin:** https://poocoin.app/tokens/0x1e41ff23d1ba5b947de91a67a53b0a96dd58ec2d
